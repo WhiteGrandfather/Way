@@ -1,0 +1,97 @@
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 100px;
+}
+
+@media (max-width: $tablet-width) {
+  .page-header {
+    position: relative;
+  }
+
+  .page-header__wrapper {
+    min-height: 50px;
+    flex-wrap: wrap;;
+  }
+
+  .page-header__logo-wrapper {
+    height: 50px;
+    padding-top: 18px;
+    padding-left: 21px;
+  }
+
+  .page-header__logo {
+    width: 44px;
+    height: auto;
+    margin: auto;
+  }
+
+
+
+  .page-header__toggle {
+    position: relative;
+
+    width: 72px;
+    height: 50px;
+
+    background-color: $color-accent;
+    cursor: pointer;
+
+    &:active {
+      background-color: $color-accent-hover;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      @include center-position;
+
+      width: 23px;
+      height: 1px;
+
+      background-color: $color-white;
+      box-shadow:
+        $color-white 0 -6px 0 0,
+        $color-white 0 6px 0 0;
+    }
+
+    &--cross {
+      background-color: transparent;
+      align-self: flex-end;
+    }
+
+    &--cross:active {
+      background-color: transparent
+    }
+
+    &--cross::before {
+      display: none;
+    }
+
+    &--no-js {
+      display: none;
+    }
+
+    &--no-js .page-header__icon-cross {
+      display: none;
+    }
+  }
+
+  .page-header__icon-cross--active {
+    position: absolute;
+    @include center-position;
+
+    display: block;
+
+    stroke: #D0D0D1;
+  }
+
+}
+
+@media (max-width: $mobile-width) {
+  .page-header__logo-wrapper {
+    padding-left: 16px;
+  }
+}
