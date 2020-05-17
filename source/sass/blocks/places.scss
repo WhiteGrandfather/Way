@@ -1,0 +1,50 @@
+.places {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 154px;
+  padding-left: 15px;
+}
+
+.places__title {
+  position: relative;
+
+  width: 358px;
+  margin-bottom: 0;
+  padding-bottom: 32px;
+
+  font-size: 55px;
+  line-height: 80px;
+  letter-spacing: -1.245px;
+  color: $color-dark;
+
+  &:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+
+    width: 229px;
+    height: 4px;
+
+    background-color: $color-accent;
+  }
+}
+
+.places__text {
+  width: 328px;
+  margin-top: 31px;
+
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.466667px;
+
+  color: rgba(44, 46, 63, 0.7);
+}
+
+// .laces__list {
+
+// }
+
+.places__link {
+  display: none;
+}

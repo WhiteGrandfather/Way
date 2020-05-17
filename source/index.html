@@ -14,13 +14,17 @@
         <div class="page-header__logo-wrapper">
           <img class="page-header__logo" src="img/logo.svg" width="57" height="22" alt="Логотип Way">
         </div>
-        <div class="page-header__togglepage-header__toggle--cross page-header__toggle--no-js">
-          <svg class="page-header__icon-cross page-header__icon-cross--active" width="22" height="23" aria-label="Закрыть">
+        <div class="page-header__toggle">
+          <!--  page-header__toggle--cross page-header__toggle--no-js -->
+          <svg class="page-header__icon-cross" width="22" height="23" aria-label="Закрыть">
+            <!--  page-header__icon-cross--active -->
             <use href="#icon-cross"></use>
           </svg>
         </div>
-        <nav class="page-header__main-nav main-nav main-nav--no-js">
-          <ul class="main-nav__list main-nav__list--active">
+        <nav class="page-header__main-nav main-nav">
+          <!-- main-nav--no-js main-nav--active-->
+          <ul class="main-nav__list">
+            <!--  main-nav__list--active -->
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">О путешествии
                 <svg class="main-nav__icon-arrow main-nav__icon-arrow--active" width="12" height="8" aria-label="Стрелка о путешествии">
@@ -35,20 +39,64 @@
                 </svg>
               </a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--phone">
               <a class="main-nav__link main-nav__link--phone" href="tel:+749978468446">
-                <svg class="main-nav__phone-icon" width="30" height="30">
+                <svg class="main-nav__phone-icon" width="17" height="24">
                   <use href="#icon-phone"></use>
                 </svg>
-                <p>+7 (499) -784-684-46</p>
+                <p class="main-nav__link-text">+7 (499) -784-684-46</p>
               </a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <main>
+    <main class="page-main">
+      <section class="page-main__banner banner">
+        <div class="banner__wrapper">
+          <div class="banner__text-container">
+            <h1 class="banner__title">Путешествие по Европе</h1>
+            <p class="banner__text">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
+            <a href="#" class="banner__button button">
+              <p class="button__text">смотреть тур</p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="page-main__places places">
+        <h2 class="places__title">Места посещения</h2>
+        <p class="places__text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
+        <ul class="places__list">
+          <li class="places__item">
+            <a href="" class="places__link">смотреть подробнее</a>
+            <img src="img/greece-top-desktop.jpg" width="320" height="430" alt="Греция">
+            <p class="places__small-text">Греция</p>
+          </li>
+          <li class="places__item">
+            <a href="" class="places__link">смотреть подробнее</a>
+            <img src="img/albany-top-desktop.jpg" width="320" height="430" alt="Албания">
+            <p class="places__small-text">Албания</p>
+          </li>
+          <li class="places__item">
+            <a href="" class="places__link">смотреть подробнее</a>
+            <img src="img/macedonia-top-desktop.jpg" width="320" height="430" alt="Македония">
+            <p class="places__small-text">Македония</p>
+          </li>
+          <li class="places__item">
+            <a href="" class="places__link">смотреть подробнее</a>
+            <img src="img/montenegro-top-desktop.jpg" width="320" height="430" alt="Черногория">
+            <p class="places__small-text">Черногория</p>
+          </li>
+          <li class="places__item">
+            <a href="" class="places__link">смотреть подробнее</a>
+            <img src="img/croatia-top-desktop.jpg" width="320" height="430" alt="Хорватия">
+            <p class="places__small-text">Хорватия</p>
+          </li>
+        </ul>
+      </section>
+      <section class="page-main__slider-tabs">
 
+      </section>
     </main>
     <footer>
 

@@ -1,9 +1,21 @@
+.page-header {
+  max-width: $desktop-width;
+  margin: 0 auto;
+}
 .page-header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   min-height: 100px;
+}
+
+.page-header__logo-wrapper {
+  padding-left: 15px;
+}
+
+.page-header__icon-cross {
+  display: none;
 }
 
 @media (max-width: $tablet-width) {
@@ -27,8 +39,6 @@
     height: auto;
     margin: auto;
   }
-
-
 
   .page-header__toggle {
     position: relative;
@@ -93,5 +103,9 @@
 @media (max-width: $mobile-width) {
   .page-header__logo-wrapper {
     padding-left: 16px;
+  }
+
+  .page-header__toggle {
+    width: 50px;
   }
 }
